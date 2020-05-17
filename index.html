@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <!-- fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+   <!--css -->
+  <link rel="stylesheet" href="./assets/css/styles.css"> 
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -27,41 +32,46 @@
   <!-- main -->
   <main>
     <!-- section de archivos accesibles y seguros -->
-    <section class="section-secure">
+    <section class="section-secure l-container">
       <img class="section-secure__img" src="./assets/images/illustration-1.svg" alt="image of files accessible and secure location">
-      <h1 class="section-secure__title">All your files in one secure location, accessible anywhere.</h1>
-      <p class="section-secure__text">Fylo stores your most important files in one secure location. 
+      <h1 class="section-secure__title center-content">All your files in one secure location, accessible anywhere.</h1>
+      <p class="section-secure__text center-content">Fylo stores your most important files in one secure location. 
         Access them wherever you need, share and collaborate with friends, 
         family, and co-workers.</p>
       <input class="input-email" type="email" placeholder="Enter your email">
       <button class="btn-submit">Get Started</button>
     </section>
     <!-- section productive-->
-    <section class="section-productive">
+    <section class="section-productive l-container">
       <img class="section-productive__img" src="./assets/images/illustration-2.svg" alt="image of productivity">
       <h2 class="section-productive__title">Stay productive, wherever you are</h2>
       <p class="section-productive__text">Never let location be an issue when accessing your files. Fylo has you 
         covered for all of your file storage needs.</p>
       <p class="section-productive__text">Securely share files and folders with friends, family and colleagues for 
         live collaboration. No email attachments required!</p>
-      <a class="btn-link" href="#">See how Fylo works
-        <img class="btn-link__icon" src="./assets/images/icon-arrow.svg" alt="icon if arrow">
-      </a>
+      <div class="btn-container">
+        <a class="btn-link" href="#">See how Fylo works
+          <img class="btn-link__icon" src="./assets/images/icon-arrow.svg" alt="icon if arrow">
+        </a>
+      </div>
     </section>
     <!-- section commentary -->
-    <div class="section-commentary">
-      <p class="section-commentary__text">Fylo has improved our team productivity by an order of magnitude. Since 
-        making the switch our team has become a well-oiled collaboration machine.</p>
-      <img class="section-commentary__avatar" src="./assets/images/avatar-testimonial.jpg" alt="image of Kyle Burton">
-      <div class="section-commentary__text-content">
-        <p class="section-commentary__text">Kyle Burton</p>
-        <p class="section-commentary__text"> Founder & CEO, Huddle</p>  
+    <div class="section-commentary center-block">
+      <blockquote>
+        <p class="section-commentary__text-quote">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+      </blockquote>
+      <div class="section-commentary__l-container">
+        <img class="section-commentary__avatar" src="./assets/images/avatar-testimonial.jpg" alt="image of Kyle Burton">
+        <div class="section-commentary__text-content">
+          <p class="section-commentary__text">Kyle Burton</p>
+          <p class="section-commentary__text"> Founder & CEO, Huddle</p>  
+        </div>
       </div>
     </div>
     <!-- section access today  -->
     <section class="section-access">
-      <h2 class="section-access__title">Get early access today</h2>
-      <p class="section-access__text">It only takes a minute to sign up and our free starter tier is extremely generous. 
+      <h2 class="section-access__title center-content">Get early access today</h2>
+      <p class="section-access__text center-content">It only takes a minute to sign up and our free starter tier is extremely generous. 
         If you have any questions, our support team would be happy to help you.</p>
       <input class="input-email" type="email" placeholder="Enter your email">
       <button class="btn-submit">Get Started For Free</button>
@@ -69,26 +79,32 @@
   </main>
   <!-- footer -->
   <footer class="footer">
-    <img class="footer__logo" src="./assets/images/logo.svg" alt="Logo del sitio">
+    <img class="footer__logo" src="./assets/images/logowhite.svg" alt="Logo del sitio">
     <div class="l-icon">
       <img class="l-icon__img" src="./assets/images/icon-phone.svg" alt="Icon of phone">
       <p class="l-icon__text">Phone: +1-543-123-4567</p>
     </div>
-    <div class="l-icon">
+    <div class="l-icon l-icon-separate">
       <img class="l-icon__img" src="./assets/images/icon-email.svg" alt="Icon of email">
       <p class="l-icon__text">example@fylo.com</p>
     </div>
     <p class="footer__text">About Us</p>
     <p class="footer__text">Jobs</p>
     <p class="footer__text">Press</p>
-    <p class="footer__text">Blog</p>
+    <p class="footer__text footer__text--separate">Blog</p>
     <p class="footer__text">Contact Us</p>
     <p class="footer__text">Terms</p>
-    <p class="footer__text">Privacy</p>
-    <div class="l-icon">
-      <img class="l-icon__facebook" src="" alt="icon of facebook">
-      <img class="l-icon__twitter" src="" alt="icon of twitter">
-      <img class="l-icon__instragram" src="" alt="icon of instagram">
+    <p class="footer__text footer__text--separate">Privacy</p>
+    <div class="l-icon l-icon__social-media">
+      <a href="#" class="l-icon__link-container">
+        <img class="l-icon__facebook" src="assets/images/facebook.svg" alt="icon of facebook">
+      </a>
+      <a href="#" class="l-icon__link-container">
+        <img class="l-icon__twitter" src="assets/images/twitter.svg" alt="icon of twitter">
+      </a>
+      <a href="#">
+        <img class="l-icon__instragram" src="assets/images/instagram.svg" alt="icon of instagram">
+      </a>
     </div>
   </footer>
   

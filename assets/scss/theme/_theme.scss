@@ -1,0 +1,37 @@
+//header
+
+//main 
+//section accesibilidad
+.section-secure__title {
+    color: var(--primary-desaturated-blue);
+} 
+.section-secure__text {
+    font-size: 16px;
+}
+//section productive 
+.section-productive__title {
+    font-size: var(--h4-font-size);
+    font-family: 'Raleway', sans-serif;
+    color: var(--primary-desaturated-blue);
+}
+.section-productive__text {
+    font-size: var(--h4-font-size);
+}
+//section access today
+.section-access {
+    background-color: var(--primary-desaturated-blue);
+    color: #fff;
+
+    &__title {
+        font-size: var(--h3-font-size);
+        font-family: 'Raleway', sans-serif;
+    }
+    &__text {
+        font-size: var(--h4-font-size);
+    }
+}
+//footer 
+.footer {
+    background-color: var(--primary-very-dark-blue);
+    color: #fff;
+}

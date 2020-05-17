@@ -1,0 +1,13 @@
+.main-menu {
+    list-style: none;
+    display: flex;
+    
+    &__item {
+        padding-right: 1rem;    
+    }
+
+    &__link {
+        color: initial;
+        font-family: 'Raleway', sans-serif;
+    }
+}

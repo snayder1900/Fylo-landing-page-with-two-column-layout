@@ -1,0 +1,18 @@
+.btn-submit {
+    width: 100%;
+    padding: 1em;
+    background-color: var(--accent-bright-blue);
+    color: var(--neutral-light-grayish-blue);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: .2em;
+    cursor: pointer;
+}
+
+//btn link
+.btn-link {
+    color: var(--accent-moderate-cyan);
+    border-bottom: 1px solid;
+    padding: .5em 0;
+}
