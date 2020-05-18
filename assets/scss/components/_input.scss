@@ -1,4 +1,9 @@
 .input-email {
     width: 100%;
     padding: 1em 1em;
+
+    @include mq(desktop) {
+        display: inline-block;
+        width: 50%;
+    }
 }

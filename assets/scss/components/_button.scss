@@ -8,6 +8,11 @@
     border: none;
     border-radius: .2em;
     cursor: pointer;
+
+    @include mq(desktop) {
+        display: inline-block;
+        width: 30%;
+    }
 }
 
 //btn link

@@ -16,7 +16,10 @@
 .main-nav {
     height: 5rem;
     margin-bottom: 4rem;
-    
+
+    @include mq(desktop) {
+        margin-bottom: 5.5rem;
+    }
 }
 .main-nav__block {
     height: 5rem;
@@ -28,25 +31,57 @@
     height: 2rem;
     padding-left: 1rem;
     display: flex;
+
+    @include mq(desktop) {
+        padding-right: 30rem;
+    }
 }
 
 //main
 //section de archivos accesibles
 .section-secure {
     margin-bottom: 8rem;
+
+    @include mq(desktop) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 .section-secure__img {
     margin-bottom: 2.5rem;
 }
+.section-secure--l-content {
+    @include mq(desktop) {
+        padding-top: 5rem;
+    }
+}
+.section-secure__title {
+    @include mq(desktop) {
+        text-align: left;
+        line-height: 1.5;
+    }
+}
 .section-secure__text {
     margin-bottom: 2.5rem;
+
+    @include mq(desktop) {
+        text-align: left;
+    }
 }
 .input-email {
     margin-bottom: 1rem;
+
+    @include mq(desktop) {
+        margin-right: 1rem;
+    }
 }
 //section productiva
 .section-productive {
     margin-bottom: 3rem;
+
+    @include mq(desktop) {
+        //aqui quede
+    }
 }
 .section-productive__img {
     margin-bottom: 8rem;
