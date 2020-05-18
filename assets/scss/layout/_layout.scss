@@ -45,6 +45,7 @@
     @include mq(desktop) {
         display: flex;
         flex-direction: row-reverse;
+        margin-bottom: 10rem;
     }
 }
 .section-secure__img {
@@ -80,21 +81,47 @@
     margin-bottom: 3rem;
 
     @include mq(desktop) {
-        //aqui quede
+        display: flex;
+        // flex-wrap: wrap;
+        flex-direction: row-reverse;
     }
 }
 .section-productive__img {
     margin-bottom: 8rem;
+
+    @include mq(desktop) {
+        
+        // height: 100px;
+        // width: 100px;
+    }
+}
+.section-productive--l-content {
+    @include mq(desktop) {
+        
+    }
 }
 .section-productive__title {
     text-align: center;
     margin-bottom: 2.2rem;
+
+    @include mq(desktop) {
+        text-align: left;
+    }
 }
 .section-productive__text {
     margin-bottom: 1.5rem;
 
     &:nth-last-child(2) {
         margin-bottom: 2rem;
+
+        @include mq(desktop) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 0;
+        text-align: left;
     }
 }
 .btn-container {
@@ -102,9 +129,17 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
+    @include mq(desktop) {
+        width: auto;
+    }
 }
 .btn-link {
     display: inline-flex;
+
+    @include mq(desktop) {
+        align-items: center;
+    }
 
     &__icon {
         padding-left: .5em;

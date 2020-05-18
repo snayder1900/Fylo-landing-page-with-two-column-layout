@@ -86,7 +86,8 @@ img {
   @media screen and (min-width: 1024px) {
     .section-secure {
       display: flex;
-      flex-direction: row-reverse; } }
+      flex-direction: row-reverse;
+      margin-bottom: 10rem; } }
 
 .section-secure__img {
   margin-bottom: 2.5rem; }
@@ -114,6 +115,10 @@ img {
 
 .section-productive {
   margin-bottom: 3rem; }
+  @media screen and (min-width: 1024px) {
+    .section-productive {
+      display: flex;
+      flex-direction: row-reverse; } }
 
 .section-productive__img {
   margin-bottom: 8rem; }
@@ -121,20 +126,36 @@ img {
 .section-productive__title {
   text-align: center;
   margin-bottom: 2.2rem; }
+  @media screen and (min-width: 1024px) {
+    .section-productive__title {
+      text-align: left; } }
 
 .section-productive__text {
   margin-bottom: 1.5rem; }
   .section-productive__text:nth-last-child(2) {
     margin-bottom: 2rem; }
+    @media screen and (min-width: 1024px) {
+      .section-productive__text:nth-last-child(2) {
+        margin-bottom: 1rem; } }
+  @media screen and (min-width: 1024px) {
+    .section-productive__text {
+      margin-bottom: 0;
+      text-align: left; } }
 
 .btn-container {
   width: 90vw;
   display: inline-flex;
   align-items: center;
   justify-content: center; }
+  @media screen and (min-width: 1024px) {
+    .btn-container {
+      width: auto; } }
 
 .btn-link {
   display: inline-flex; }
+  @media screen and (min-width: 1024px) {
+    .btn-link {
+      align-items: center; } }
   .btn-link__icon {
     padding-left: .5em; }
 
@@ -220,9 +241,15 @@ blockquote::before {
   font-size: var(--h4-font-size);
   font-family: 'Raleway', sans-serif;
   color: var(--primary-desaturated-blue); }
+  @media screen and (min-width: 1024px) {
+    .section-productive__title {
+      font-size: var(--h1-font-size); } }
 
 .section-productive__text {
   font-size: var(--h4-font-size); }
+  @media screen and (min-width: 1024px) {
+    .section-productive__text {
+      font-size: 16px; } }
 
 .section-access {
   background-color: var(--primary-desaturated-blue);

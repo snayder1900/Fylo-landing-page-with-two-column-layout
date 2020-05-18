@@ -14,9 +14,17 @@
     font-size: var(--h4-font-size);
     font-family: 'Raleway', sans-serif;
     color: var(--primary-desaturated-blue);
+
+    @include mq(desktop) {
+        font-size: var(--h1-font-size);
+    }
 }
 .section-productive__text {
     font-size: var(--h4-font-size);
+
+    @include mq(desktop) {
+        font-size: 16px;
+    }
 }
 //section access today
 .section-access {
