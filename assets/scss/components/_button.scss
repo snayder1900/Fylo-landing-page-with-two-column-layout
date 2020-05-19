@@ -8,6 +8,7 @@
     border: none;
     border-radius: .2em;
     cursor: pointer;
+    outline: none;
 
     @include mq(desktop) {
         display: inline-block;

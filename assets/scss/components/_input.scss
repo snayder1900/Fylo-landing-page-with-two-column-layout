@@ -1,6 +1,15 @@
 .input-email {
     width: 100%;
     padding: 1em 1em;
+    outline: none;
+
+    &:hover {
+        border-color: var(--primary-desaturated-blue);
+    }
+
+    &:focus {
+        border-color: var(--primary-desaturated-blue);
+    }
 
     @include mq(desktop) {
         display: inline-block;

@@ -50,6 +50,10 @@
 }
 .section-secure__img {
     margin-bottom: 2.5rem;
+
+    @include mq(desktop) {
+        width: 50vw;
+    }
 }
 .section-secure--l-content {
     @include mq(desktop) {
@@ -60,6 +64,7 @@
     @include mq(desktop) {
         text-align: left;
         line-height: 1.5;
+        margin-bottom: 1.5rem;
     }
 }
 .section-secure__text {
@@ -67,6 +72,7 @@
 
     @include mq(desktop) {
         text-align: left;
+        margin-bottom: 1.5rem;
     }
 }
 .input-email {
@@ -89,6 +95,10 @@
 }
 .section-productive__img {
     margin-bottom: 8rem;
+
+    @include mq(desktop) {
+        width: 50vw;
+    }
 }
 .section-productive--l-content {
     @include mq(desktop) {
@@ -227,10 +237,25 @@ blockquote::before {
 .footer {
     padding: 4em;
 
+    @include mq(desktop) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 300px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
     &__logo {
         margin-bottom: 2rem;
         color: #fff;
+
+        @include mq(desktop) {
+            margin-bottom: 0;
+        }
     }
+}
+.l-grid--footer {
+    justify-self: center;
 }
 .l-icon {
     display: flex;
@@ -238,6 +263,10 @@ blockquote::before {
 
     &-separate {
         margin-bottom: 2.2rem;
+
+        @include mq(desktop) {
+            margin-bottom: 0;
+        }
     }
 
     &__img {
@@ -248,11 +277,19 @@ blockquote::before {
 
     &--separate {
         margin-bottom: 2.2rem;
+
+        @include mq(desktop) {
+            margin-bottom: 0;
+        }
     }
 }
 .l-icon__social-media {
     display: flex;
     justify-content: center;
+
+    @include mq(desktop) {
+        justify-content: flex-end;
+    }
 }
 .l-icon__link-container {
     margin-right: 1rem;
