@@ -78,26 +78,21 @@
 }
 //section productiva
 .section-productive {
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
 
     @include mq(desktop) {
         display: flex;
         // flex-wrap: wrap;
         flex-direction: row-reverse;
+        margin-bottom: 6rem;
     }
 }
 .section-productive__img {
     margin-bottom: 8rem;
-
-    @include mq(desktop) {
-        
-        // height: 100px;
-        // width: 100px;
-    }
 }
 .section-productive--l-content {
     @include mq(desktop) {
-        
+        margin-right: 4rem;
     }
 }
 .section-productive__title {
@@ -111,17 +106,13 @@
 .section-productive__text {
     margin-bottom: 1.5rem;
 
+    @include mq(desktop) {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    
     &:nth-last-child(2) {
         margin-bottom: 2rem;
-
-        @include mq(desktop) {
-            margin-bottom: 1rem;
-        }
-    }
-
-    @include mq(desktop) {
-        margin-bottom: 0;
-        text-align: left;
     }
 }
 .btn-container {
@@ -129,6 +120,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3rem;
 
     @include mq(desktop) {
         width: auto;
@@ -148,11 +140,17 @@
 
 // section commentary
 .section-commentary {
-    margin-bottom: 8rem;
     width: 75vw;
     background-color: #fff;
     padding: 1.5em;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    @include mq(desktop) {
+        width: 30vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
 }
 blockquote {
     margin: 0;
@@ -194,11 +192,34 @@ blockquote::before {
 }
 //section access today
 .section-access {
-    height: 350px;
+    height: 370px;
     padding: 4em;
 
     &__text {
         margin-bottom: 2rem;
+
+        @include mq(desktop) {
+            text-align: left;
+            width: 40vw;
+            margin-bottom: 0;
+        }
+    }
+
+    @include mq(desktop) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+    }
+}
+.section-access--l-container {
+    @include mq(desktop) {
+        margin-right: 15rem;
+    }
+}
+.section-access__title {
+    @include mq(desktop) {
+        text-align: left;
     }
 }
 

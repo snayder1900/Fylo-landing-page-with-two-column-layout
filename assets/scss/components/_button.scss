@@ -14,6 +14,12 @@
         width: 30%;
     }
 }
+.btn-submit--block {
+    @include mq(desktop) {
+        display: block;
+        width: auto;
+    }
+}
 
 //btn link
 .btn-link {

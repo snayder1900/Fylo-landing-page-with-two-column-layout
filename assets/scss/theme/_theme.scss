@@ -37,6 +37,10 @@
     }
     &__text {
         font-size: var(--h4-font-size);
+
+        @include mq(desktop) {
+            font-size: var(--body-font-size);
+        }
     }
 }
 //footer 

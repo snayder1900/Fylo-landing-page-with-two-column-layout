@@ -7,3 +7,9 @@
         width: 50%;
     }
 }
+.input-email--block {
+    @include mq(desktop) {
+        display: block;
+        width: 30vw;
+    }
+}
